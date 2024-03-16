@@ -16,8 +16,8 @@ $hari = [
 <section>
     <div>
         <div class="bread-container d-flex justify-content-center">
-            <a href="/" class="bread-list active">Beranda</a>
-            <a href="/piutang" class="bread-list">Piutang</a>
+            <a href="<?= base_url('/') ?>" class="bread-list active">Beranda</a>
+            <a href="<?= base_url('piutang') ?>" class="bread-list">Piutang</a>
             <a href="" class="bread-list">Kebutuhan</a>
             <a href="" class="bread-list">Target</a>
             <a href="" class="bread-list">Rencana</a>
@@ -212,16 +212,16 @@ $hari = [
         }
         console.log(blnIni.value)
         console.log(blnSblm.value)
-        $('#container').load('http://localhost:8080/coba/filterlog/' + blnSblm.value +
+        $('#container').load('http://localhost/simaung/public/coba/filterlog/' + blnSblm.value +
             '/' + blnIni.value)
 
         $('#bln-ini').on('change', function() {
-            $('#container').load('http://localhost:8080/coba/filterlog/' + blnSblm.value +
+            $('#container').load('http://localhost/simaung/public/coba/filterlog/' + blnSblm.value +
                 '/' + $(this).val())
         })
 
         $('#bln-sblm').on('change', function() {
-            $('#container').load('http://localhost:8080/coba/filterlog/' + $(this).val() +
+            $('#container').load('http://localhost/simaung/public/coba/filterlog/' + $(this).val() +
                 '/' + blnIni.value)
         })
     })

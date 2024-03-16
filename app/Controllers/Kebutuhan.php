@@ -63,7 +63,7 @@ class Kebutuhan extends BaseController
     
         $this->kebutuhanModel->save($data);
         session()->setFlashdata('addberhasil', '1 Kebutuhan berhasil ditambah');
-        return redirect()->to(base_url('/kebutuhan'));
+        return redirect()->to(base_url('kebutuhan'));
     }
 
     // public function checkedproses()
@@ -101,7 +101,7 @@ class Kebutuhan extends BaseController
         ];
         $this->kebutuhanModel->update($id, $datakebutuhan);
         session()->setFlashdata('updateberhasil', 'Berhasil update data!');
-        return redirect()->to(base_url('/kebutuhan'));
+        return redirect()->to(base_url('kebutuhan'));
     }
 
     public function doneproses()
@@ -139,13 +139,13 @@ class Kebutuhan extends BaseController
         $this->dompetModel->update($iddompet, $datadompet);
 
         session()->setFlashdata('doneproses', 'Berhasil update data!');
-        return redirect()->to(base_url('/kebutuhan'));
+        return redirect()->to(base_url('kebutuhan'));
     }
 
     public function deleteproses($id)
     {
         $this->kebutuhanModel->delete($id);
         session()->setFlashdata('deleteberhasil', '1 Kebutuhan dihapus!');
-        return redirect()->to(base_url('/kebutuhan'));
+        return redirect()->to(base_url('kebutuhan'));
     }
 }

@@ -35,18 +35,18 @@
 
 <header id="header" class="header fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-        <h2 class="logo"><a href="/" class=""><i class="fa-solid fa-money-bill"></i> Simaung</a></h2>
+        <h2 class="logo"><a href="<?= base_url('/') ?>" class=""><i class="fa-solid fa-money-bill"></i> Simaung</a></h2>
 
         <div class="nav-list">
             <h2 class="logo-list logo"><a href="/"><i class="fa-solid fa-money-bill"></i> Simaung</a></h2>
             <ul class="nav">
-                <li class="nav-item"><a href="/" class="nav-link active-link">Home</a></li>
+                <li class="nav-item"><a href="<?= base_url('/') ?>" class="nav-link active-link">Home</a></li>
                 <li class="nav-item"><a href="" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="/calendar" class="nav-link">Calendar</a></li>
                 <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="/piutang" class="nav-link">Piutang</a></li>
-                <li class="nav-item"><a href="/coba" class="nav-link">Coba</a></li>
-                <li class="nav-item"><a href="/user" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+                <li class="nav-item"><a href="<?= base_url('piutang') ?>" class="nav-link">Piutang</a></li>
+                <li class="nav-item"><a href="<?= base_url('coba') ?>" class="nav-link">Coba</a></li>
+                <li class="nav-item"><a href="<?= base_url('user') ?>" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
             </ul>
             <a href="" class="nav-link daftar"><span></span> Daftar</a>
         </div>
